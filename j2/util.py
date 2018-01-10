@@ -8,6 +8,7 @@ def get_radius(d):
     
     return r
 
+
 def create_oval_mask(width, height):
     w_radius = get_radius(width)
     h_radius = get_radius(height)
@@ -18,3 +19,21 @@ def create_oval_mask(width, height):
     out = (x**2 / (width / 2)**2) + (y**2 / (height / 2)**2) <= 1
     
     return out
+
+
+def calculate_stats(overlap_dict):
+    """
+    Calculates precision, recall and f1 measures.
+    """
+    arr = np.array(overlap_dict['gtPerPrediction'])
+    tp = np.sum([arr >= 1])
+    fp = np.sum([arr == 0])
+
+    arr = np.array(overlap_dict['predictionPerGt'])
+    fn = np.sum(np.ones_like(arr)) - tp
+
+    prec = tp / (tp + fp)
+    rec = tp / (tp + fn)
+    f1 = (2 * prec * rec) / (prec + rec)
+
+    return prec, rec, f1
