@@ -1,6 +1,7 @@
 import numpy as np
 from skimage.measure import label
 
+
 def bounding_box(img):
     """
     Returns the z, y, x vectors that create a bounding box
@@ -77,13 +78,17 @@ def compute_overlap_array(predictions, gt, compare_annotations=False):
 
     #first, look at how many unique predictions
     #overlap with a single gt synapse
-    predictionPerGt = [get_unique_overlap(gt, predictions, i)
-                       for i in gt_uniques]
+    predictionPerGt = [
+        get_unique_overlap(gt, predictions, i) for i in gt_uniques
+    ]
 
     #next, look at how many unique synapses overlap
     #with a single synapse prediction
-    gtPerPrediction = [get_unique_overlap(predictions, gt, i)
-                       for i in prediction_uniques]
+    gtPerPrediction = [
+        get_unique_overlap(predictions, gt, i) for i in prediction_uniques
+    ]
 
-    return {'predictionPerGt': predictionPerGt,
-            'gtPerPrediction': gtPerPrediction}
+    return {
+        'predictionPerGt': predictionPerGt,
+        'gtPerPrediction': gtPerPrediction
+    }

@@ -85,8 +85,12 @@ def graph_performance(absolute=False, *args, **kwds):
             else:
                 data = counts
 
-            ax[j].bar(np.arange(3) + offset[i], data,
-                      width=width, align='edge', label=label)
+            ax[j].bar(
+                np.arange(3) + offset[i],
+                data,
+                width=width,
+                align='edge',
+                label=label)
             ax[j].set(xticks=np.arange(3) + .4)
 
     #Finishing touches
