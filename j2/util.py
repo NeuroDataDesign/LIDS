@@ -89,12 +89,16 @@ def plot_volume(img):
     subplot_kw = dict(frameon=False)
 
     slices = img.shape[0]
-    nrows = slices // 3 + 1
+
+    if slices % 4 == 0:
+        nrows = slices // 4
+    else:
+        nrows = slices // 4 + 1
 
     fig, axes = plt.subplots(
         nrows=nrows,
-        ncols=3,
-        figsize=(24, nrows * 8),
+        ncols=4,
+        figsize=(32, nrows * 8),
         sharey=True,
         sharex=True,
         subplot_kw=subplot_kw,
