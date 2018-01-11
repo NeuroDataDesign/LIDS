@@ -27,7 +27,7 @@ def create_annotation_volume(csv_path, img_shape, fname):
         width = row[1]['Width']
         height = row[1]['Height']
         x, y, z = row[1]['X'], row[1]['Y'], row[1]['Z'] - 1
-        index = row[0] + 1  # ROI index starts at 0, but it cannot be 0 in output
+        index = row[0] + 1  #ROI index starts at 0, but it cannot be 0 in output
 
         mask = create_oval_mask(width, height) * index
 

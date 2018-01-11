@@ -61,3 +61,20 @@ def remove_labels(img, threshold):
         out[out == i] = 0
 
     return out
+
+
+def overlay_images(img_1, img_2):
+    """
+    Creates an overlap image using two image volumes.
+    """
+    assert img_1.shape == img_2.shape, "The two image volumes must have same dimensions."
+
+    mask_img_1 = np.stack([z > 0 for z in img_1])
+    mask_img_2 = np.stack([z > 0 for z in img_2])
+
+    rgb_img = np.moveaxis(
+        np.stack([mask_img_1, mask_img_2,
+                  np.zeros_like(mask_img_1)]), 0, -1)
+    rgb_img = rgb_img.astype(float)
+
+    return rgb_img
