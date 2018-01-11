@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -78,3 +79,34 @@ def overlay_images(img_1, img_2):
     rgb_img = rgb_img.astype(float)
 
     return rgb_img
+
+
+def plot_volume(img):
+    """
+    Plot each z-slice as an image.
+    """
+    fig_kw = dict(frameon=False)
+    subplot_kw = dict(frameon=False)
+
+    slices = img.shape[0]
+    nrows = slices // 3 + 1
+
+    fig, axes = plt.subplots(
+        nrows=nrows,
+        ncols=3,
+        figsize=(24, nrows * 8),
+        sharey=True,
+        sharex=True,
+        subplot_kw=subplot_kw,
+        **fig_kw)
+
+    for idx, ax in enumerate(axes.ravel()):
+        if idx < slices:
+            ax.set_title("Z-slice: {}".format(idx), fontsize=30)
+            ax.set_axis_off()
+            ax.imshow(img[idx])
+        else:
+            ax.set_axis_off()
+
+    fig.tight_layout()
+    return fig
