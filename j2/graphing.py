@@ -98,3 +98,38 @@ def graph_performance(absolute=False, *args, **kwds):
     plt.legend()
 
     return fig
+
+
+def plot_volume(img):
+    """
+    Plot each z-slice as an image.
+    """
+    fig_kw = dict(frameon=False)
+    subplot_kw = dict(frameon=False)
+
+    slices = img.shape[0]
+
+    if slices % 4 == 0:
+        nrows = slices // 4
+    else:
+        nrows = slices // 4 + 1
+
+    fig, axes = plt.subplots(
+        nrows=nrows,
+        ncols=4,
+        figsize=(32, nrows * 8),
+        sharey=True,
+        sharex=True,
+        subplot_kw=subplot_kw,
+        **fig_kw)
+
+    for idx, ax in enumerate(axes.ravel()):
+        if idx < slices:
+            ax.set_title("Z-slice: {}".format(idx), fontsize=30)
+            ax.set_axis_off()
+            ax.imshow(img[idx])
+        else:
+            ax.set_axis_off()
+
+    fig.tight_layout()
+    return fig
