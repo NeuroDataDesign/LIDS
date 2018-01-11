@@ -100,7 +100,7 @@ def graph_performance(absolute=False, *args, **kwds):
     return fig
 
 
-def plot_volume(img):
+def plot_volume(img, title=None):
     """
     Plot each z-slice as an image.
     """
@@ -130,6 +130,9 @@ def plot_volume(img):
             ax.imshow(img[idx])
         else:
             ax.set_axis_off()
+
+    if title:
+        fig.suptitle(title, fontsize=50, y=1.03)
 
     fig.tight_layout()
     return fig
