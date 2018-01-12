@@ -100,7 +100,7 @@ def graph_performance(absolute=False, *args, **kwds):
     return fig
 
 
-def plot_volume(img, title=None):
+def plot_volume(img, cmap=None, title=None):
     """
     Plot each z-slice as an image.
     """

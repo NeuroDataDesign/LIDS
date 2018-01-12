@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from skimage.io import imsave
+import skimage.io as io
 from util import get_radius, create_oval_mask
 
 
@@ -35,8 +35,11 @@ def create_annotation_volume(csv_path, img_shape, fname):
         h_radius = get_radius(height)
 
         ridx, cidx = np.where(mask)
-        absidxR = (y + ridx - w_radius).astype(np.int)
-        absidxC = (x + cidx - h_radius).astype(np.int)
+        #absidxR = (y + ridx - w_radius).astype(np.int)
+        #absidxC = (x + cidx - h_radius).astype(np.int)
+
+        absidxR = (y + ridx).astype(np.int)
+        absidxC = (x + cidx).astype(np.int)
 
         valid_mask = (absidxR >= 0) & (absidxR < out.shape[2]) & \
                      (absidxC >= 0) & (absidxC < out.shape[1])
@@ -52,6 +55,6 @@ def create_annotation_volume(csv_path, img_shape, fname):
 if __name__ == '__main__':
     csv_path = '../data/Overlay Elements.csv'
     img_shape = (16, 359, 359)
-    fname = 'annotation.tiff'
+    fname = 'annotation_corrected.tiff'
 
     create_annotation_volume(csv_path, img_shape, fname)
