@@ -31,7 +31,8 @@ def calculate_stats(overlap_dict):
     fp = np.sum([arr == 0])
 
     arr = np.array(overlap_dict['predictionPerGt'])
-    fn = np.sum(np.ones_like(arr)) - tp
+    fn = np.sum([arr == 0])
+    #fn = np.sum(np.ones_like(arr)) - tp
 
     prec = tp / (tp + fp)
     rec = tp / (tp + fn)
