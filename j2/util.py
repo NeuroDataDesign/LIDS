@@ -31,6 +31,7 @@ def calculate_stats(overlap_dict):
     fp = np.sum([arr == 0])
 
     arr = np.array(overlap_dict['predictionPerGt'])
+    tn = np.sum([arr >= 1])
     fn = np.sum([arr == 0])
     #fn = np.sum(np.ones_like(arr)) - tp
 
@@ -38,7 +39,10 @@ def calculate_stats(overlap_dict):
     rec = tp / (tp + fn)
     f1 = (2 * prec * rec) / (prec + rec)
 
-    return prec, rec, f1
+    sensitivity = tp / (tp + fn)
+    specificity = tn / (tn + fp)
+
+    return prec, rec, f1, sensitivity, specificity
 
 
 def remove_labels(img, threshold):
