@@ -1,4 +1,3 @@
-# LIDS 
-Longitudinal In vivo Detection of Synapses
+# About  
 
-Evaluating two photon microscopy data
+
