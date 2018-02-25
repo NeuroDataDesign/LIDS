@@ -1,8 +1,8 @@
-.pyc
-.tif
-.tiff
-.csv
-.zip
+*.pyc
+*.tif
+*.tiff
+*.csv
+*.zip
 data/
 __pycache__/
 .ipynb_checkpoints/
