@@ -124,10 +124,11 @@ def plot_volume(img, cmap=None, title=None):
         **fig_kw)
 
     for idx, ax in enumerate(axes.ravel()):
+        print(idx, ax)
         if idx < slices:
             ax.set_title("Z-slice: {}".format(idx), fontsize=30)
             ax.set_axis_off()
-            ax.imshow(img[idx])
+            ax.imshow(img[idx], cmap=cmap)
         else:
             ax.set_axis_off()
 
