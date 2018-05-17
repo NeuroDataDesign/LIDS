@@ -7,4 +7,23 @@ The LIDS pipeline will use two-photon microscopy images of mouse cerebral cortex
 
 # Usage
 
-First, git clone or download the repository. Then, run the setup.sh file to set up a LIDS conda environment.
+First, `git clone` or download the repository. 
+
+Then, run 
+```
+./setup.sh
+```
+
+to set up a LIDS conda environment. Change into the LIDS conda environment by 
+
+```
+source activate LIDS
+```
+
+and run a Jupyter Notebook server
+
+```
+jupyter notebook
+```
+
+and navigate to the demo notebook. 
