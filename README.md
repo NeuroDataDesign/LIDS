@@ -5,6 +5,10 @@ Synapse detection and characterization are important for elucidating underlying 
 The LIDS pipeline will use two-photon microscopy images of mouse cerebral cortex and autonomously detect and characterize excitatory synapses located at dendritic spines expressing AMPA receptors. 
 
 
+# Requirements
+
+The LIDS pipeline is easily built using Anaconda. We ran this with Anaconda 3 and Python 3.6 but it is possible lower versions of Python will work.
+
 # Usage
 
 First, `git clone` or download the repository. 
@@ -23,6 +27,7 @@ source activate LIDS
 and run a Jupyter Notebook server
 
 ```
+
 jupyter notebook
 ```
 
