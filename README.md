@@ -11,8 +11,8 @@ The LIDS pipeline is easily built using Anaconda. We ran this with Anaconda 3 an
 
 # Usage
 
-To access our demo, clone our repository by running the **git clone <link to repo>** command in terminal or download the repository. 
-RUN THE FOLLOWING IN THE TOP DIRECTORY OF LIDS REPOSITORY (use **cd <path to LIDS>** command to navigate to LIDS directory).
+To access our demo, clone our repository by running the **git clone**  <link to repo>  command in terminal or download the repository. 
+RUN THE FOLLOWING IN THE TOP DIRECTORY OF LIDS REPOSITORY (use **cd** <path to LIDS>  command to navigate to LIDS directory).
 
 ### Windows specific commands:
 If you are using a Windows OS, please install Ubuntu and run the following commands in Ubuntu terminal 
