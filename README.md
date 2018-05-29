@@ -86,7 +86,7 @@ source activate <NAME OF ENV>
 
 python -m ipykernel install --user --name <NAME OF ENV> --display-name "<DISPLAY NAME OF YOUR CHOICE>"
 ```
-
+Environment should be listed under the *Kernel* tab's *Change kernel* option in the notebook. Select the correct kernel environment 
 
 
 
