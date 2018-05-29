@@ -7,13 +7,11 @@ The LIDS pipeline will use two-photon microscopy images of mouse cerebral cortex
 
 # Requirements
 
-The LIDS pipeline is easily built using Anaconda. We ran this with Anaconda 3 and Python 3.6 but it is possible lower versions of Python will work.
+The LIDS pipeline is easily built using Anaconda. We ran this with Anaconda 3 and Python 3.6 but it is possible lower versions of Python will work. If you have not done so, please install [Anaconda Python 3.6 version from here](https://www.anaconda.com/what-is-anaconda/)
 
 # Usage
-If you have not done so, please install [Anaconda Python 3.6 version from here](https://www.anaconda.com/what-is-anaconda/)
 
-# Clone our repo
-To access our demo, run the 'git clone' command in terminal or download the repository. 
+To access our demo, clone our repository by running the 'git clone <link to repo>' command in terminal or download the repository. 
 
 Then, run 
 ```
