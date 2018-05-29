@@ -32,7 +32,7 @@ and run a Jupyter Notebook server
 jupyter notebook
 ```
 
-and navigate to the demo notebook. **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
+and navigate to the demo notebook and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 ### Mac:
 Run the following commands in terminal:
@@ -61,6 +61,8 @@ Run Jupyter Notebook
 jupyter notebook
 
 ```
+and navigate to the demo notebook and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
+
 
 
 
