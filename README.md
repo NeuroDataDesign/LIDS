@@ -37,7 +37,7 @@ and navigate to the *tracking_demo notebook* and run it! **Note, the path to imp
 
 ### Mac specific commands:
 Run the following commands in terminal if you have a 64 bit OS. If you do not have a 64 bit OS or were unable to run the next three commands, skip to *creating an environment from scratch* and beyond:
-Create LIDS environment:
+
 ```
 conda env create -f environment.yml
 ```
