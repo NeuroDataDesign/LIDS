@@ -36,7 +36,7 @@ jupyter notebook
 and navigate to the *tracking_demo notebook* and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 ### Mac specific commands:
-Run the following commands in terminal if you have a 64 bit OS. If you do not have a 64 bit OS or were unable to run the commands, skip to creating an environment from scratch and beyond:
+Run the following commands in terminal if you have a 64 bit OS. If you do not have a 64 bit OS or were unable to run the next three commands, skip to *creating an environment from scratch* and beyond:
 Create LIDS environment:
 ```
 conda env create -f environment.yml
@@ -54,10 +54,10 @@ and navigate to the *tracking_demo notebook* and run it! **Note, the path to imp
 
 
 If you were unable to run the above commands, do the following:
-Create an evironment to run the notebook:
+
+Create an evironment from scratch to run the notebook:
 ```
 conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip scipy scikit-learn tifffile trackpy nb_conda imageio -c conda-forge
-
 
 ```
 When prompted with *Proceed ([y]/n)?* type *y*
