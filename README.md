@@ -13,7 +13,8 @@ The LIDS pipeline is easily built using Anaconda. We ran this with Anaconda 3 an
 
 To access our demo, clone our repository by running the *git clone <link to repo>* command in terminal or download the repository. 
 
-## Windows OS, run in Ubuntu 
+### Windows:
+If you are using a Windows OS, please install Ubuntu and run the following commands in Ubuntu terminal 
 ```
 ./setup.sh
 ```
@@ -32,3 +33,6 @@ jupyter notebook
 ```
 
 and navigate to the demo notebook. 
+
+### Mac:
+
