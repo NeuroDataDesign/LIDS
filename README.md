@@ -43,5 +43,24 @@ conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip s
 
 ```
 
+Activate your environment:
+
+```
+source activate <NAME OF ENV>
+
+```
+We will need another package in our environment:
+
+```
+pip install matplotlib-scalebar
+
+```
+Run Jupyter Notebook
+
+```
+jupyter notebook
+
+```
+
 
 
