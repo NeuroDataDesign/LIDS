@@ -41,7 +41,9 @@ First, create an evironment to run the notebook:
 ```
 conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip scipy scikit-learn tifffile trackpy nb_conda -c conda-forge
 
+
 ```
+When prompted with "Proceed ([y]/n)?", type *y*
 
 Activate your environment:
 
@@ -64,5 +66,8 @@ jupyter notebook
 and navigate to the *demo notebook* and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 The demo notebook **must run in the correct environment**. Even after the creation of your environment, if you are **unable to locate the environment in Jupyter Notebook's kernel**, do the following:
+
+Check to make sure the environment was created:
+
 
 
