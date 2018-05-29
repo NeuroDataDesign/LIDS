@@ -37,13 +37,14 @@ and navigate to the *demo notebook* and run it! **Note, the path to imported fil
 ### Mac specific commands:
 Run the following commands in terminal:
 
-First, create an evironment to run the notebook:
+Create an evironment to run the notebook:
 ```
 conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip scipy scikit-learn tifffile trackpy nb_conda -c conda-forge
 
 
 ```
-When prompted with "Proceed ([y]/n)?", type *y*
+When prompted with Proceed ([y]/n)?, type *y*
+
 
 Activate your environment:
 
@@ -57,7 +58,7 @@ We will need another package in our environment:
 pip install matplotlib-scalebar
 
 ```
-Run Jupyter Notebook
+Run Jupyter Notebook:
 
 ```
 jupyter notebook
@@ -68,6 +69,25 @@ and navigate to the *demo notebook* and run it! **Note, the path to imported fil
 The demo notebook **must run in the correct environment**. Even after the creation of your environment, if you are **unable to locate the environment in Jupyter Notebook's kernel**, do the following:
 
 Check to make sure the environment was created:
+
+```
+conda info --envs
+```
+You should see a list of environments and an asterisk beside the active environment
+
+If correct environment is not active, activate it:
+```
+source activate <NAME OF ENV>
+```
+If you need to display the name of environment in Jupyter Notebook kernel:
+
+```
+source activate <NAME OF ENV>
+
+python -m ipykernel install --user --name <NAME OF ENV> --display-name "DISPLAY NAME OF YOUR CHOICE"
+```
+
+
 
 
 
