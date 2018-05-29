@@ -12,6 +12,7 @@ The LIDS pipeline is easily built using Anaconda. We ran this with Anaconda 3 an
 # Usage
 
 To access our demo, clone our repository by running the **git clone <link to repo>** command in terminal or download the repository. 
+RUN THE FOLLOWING IN TOP DIRECTORY OF LIDS REPOSITORY
 
 ### Windows specific commands:
 If you are using a Windows OS, please install Ubuntu and run the following commands in Ubuntu terminal 
@@ -25,7 +26,7 @@ to set up a LIDS conda environment. Change into the LIDS conda environment by
 source activate LIDS
 ```
 
-and run a Jupyter Notebook server
+Run Jupyter Notebook server in activated environment
 
 ```
 
@@ -35,8 +36,24 @@ jupyter notebook
 and navigate to the *tracking_demo notebook* and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 ### Mac specific commands:
-Run the following commands in terminal:
+Run the following commands in terminal if you have a 64 bit OS. If you do not have a 64 bit OS or were unable to run the commands, skip to creating an environment from scratch and beyond:
+Create LIDS environment:
+```
+conda env create -f environment.yml
+```
+Activate LIDS:
+```
+source activate LIDS
+```
+Run Jupyter Notebook server in activated environment:
+```
+jupyter notebook
+```
+and navigate to the *tracking_demo notebook* and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
+
+
+If you were unable to run the above commands, do the following:
 Create an evironment to run the notebook:
 ```
 conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip scipy scikit-learn tifffile trackpy nb_conda imageio -c conda-forge
