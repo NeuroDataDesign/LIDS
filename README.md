@@ -39,7 +39,7 @@ Run the following commands in terminal:
 
 Create an evironment to run the notebook:
 ```
-conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip scipy scikit-learn tifffile trackpy nb_conda -c conda-forge
+conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip scipy scikit-learn tifffile trackpy nb_conda imageio -c conda-forge
 
 
 ```
