@@ -11,7 +11,9 @@ The LIDS pipeline is easily built using Anaconda. We ran this with Anaconda 3 an
 
 # Usage
 If you have not done so, please install [Anaconda Python 3.6 version from here](https://www.anaconda.com/what-is-anaconda/)
-First, `git clone` or download the repository. 
+
+# Clone our repo
+To access our demo, run the 'git clone' command in terminal or download the repository. 
 
 Then, run 
 ```
