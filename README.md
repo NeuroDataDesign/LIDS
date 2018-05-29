@@ -32,10 +32,16 @@ and run a Jupyter Notebook server
 jupyter notebook
 ```
 
-and navigate to the demo notebook. **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to the files to match your folder structure to ensure successful completion of our pipeline** 
+and navigate to the demo notebook. **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 ### Mac:
+Run the following commands in terminal:
 
-Create an evironment to run the notebook:
+First, create an evironment to run the notebook:
+```
+conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip scipy scikit-learn tifffile trackpy nb_conda -c conda-forge
+
+```
+
 
 
