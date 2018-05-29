@@ -43,7 +43,7 @@ conda create -n <NAME OF ENV> numpy pandas matplotlib seaborn scikit-image pip s
 
 
 ```
-When prompted with Proceed ([y]/n)?, type *y*
+When prompted with *Proceed ([y]/n)?* type *y*
 
 
 Activate your environment:
@@ -84,7 +84,7 @@ If you need to display the name of environment in Jupyter Notebook kernel:
 ```
 source activate <NAME OF ENV>
 
-python -m ipykernel install --user --name <NAME OF ENV> --display-name "DISPLAY NAME OF YOUR CHOICE"
+python -m ipykernel install --user --name <NAME OF ENV> --display-name "<DISPLAY NAME OF YOUR CHOICE>"
 ```
 
 
