@@ -33,7 +33,9 @@ Run Jupyter Notebook server in activated environment
 jupyter notebook
 ```
 
-and navigate to the *tracking_demo notebook* and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
+and navigate to the *tracking_demo notebook* in the *src/demo* folders and run it! 
+
+**Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 ### Mac specific commands:
 Run the following commands in terminal if you have a 64 bit OS. If you do not have a 64 bit OS or were unable to run the next three commands, skip to *creating an environment from scratch* and beyond:
@@ -49,7 +51,9 @@ Run Jupyter Notebook server in activated environment:
 ```
 jupyter notebook
 ```
-and navigate to the *tracking_demo notebook* and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
+and navigate to the *tracking_demo notebook* in the *src/demo* folders and run it! 
+
+**Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 
 
@@ -81,7 +85,9 @@ Run Jupyter Notebook:
 jupyter notebook
 
 ```
-and navigate to the *tracking_demo notebook* and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
+and navigate to the *tracking_demo notebook* in the *src/demo* folders and run it! 
+
+**Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 The demo notebook **must run in the correct environment**. Even after the creation of your environment, if you are **unable to locate the environment in Jupyter Notebook's kernel**, do the following:
 
