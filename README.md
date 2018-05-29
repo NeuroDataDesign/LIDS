@@ -63,6 +63,6 @@ jupyter notebook
 ```
 and navigate to the *demo notebook* and run it! **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
-### The demo notebook must run in the correct environment. Even after the creation of your environment, if you are unable to locate the environment in Jupyter Notebook's kernel, do the following:
+The demo notebook **must run in the correct environment**. Even after the creation of your environment, if you are **unable to locate the environment in Jupyter Notebook's kernel**, do the following:
 
 
