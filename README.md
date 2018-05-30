@@ -18,7 +18,7 @@ git clone https://github.com/NeuroDataDesign/LIDS.git
 
 ```
 
-THE FOLLOWING COMMANDS MUST BE RUN IN THE TOP DIRECTORY OF LIDS REPOSITORY, use the next command to navigate to LIDS directory:
+COMMANDS SPECIFIC TO AN OPERTAING SYSTEM (OS) MUST BE RUN IN THE TOP DIRECTORY OF LIDS REPOSITORY, use the next command to navigate to LIDS directory:
 
 ```
 cd LIDS
@@ -30,7 +30,7 @@ cd <path to LIDS>
 ```
 
 ### Windows specific commands:
-If you are using a Windows operating system (OS), please install Ubuntu and run the following commands in Ubuntu terminal 
+If you are using a Windows OS, please install Ubuntu and run the following commands in Ubuntu terminal 
 ```
 ./setup.sh
 ```
