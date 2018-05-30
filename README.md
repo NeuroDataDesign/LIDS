@@ -14,9 +14,20 @@ The LIDS pipeline is easily built using Anaconda. We ran this with Anaconda 3 an
 To access our demo, clone our repository by running the following command in terminal:
 
 ```
-git clone 
+git clone https://github.com/NeuroDataDesign/LIDS.git
+
 ```
-RUN THE FOLLOWING IN THE TOP DIRECTORY OF LIDS REPOSITORY (use **cd** <path to LIDS>  command to navigate to LIDS directory).
+
+THE FOLLOWING COMMANDS MUST BE RUN IN THE TOP DIRECTORY OF LIDS REPOSITORY, use the next command to navigate to LIDS directory:
+
+```
+cd LIDS
+
+```
+if LIDS is not a sub-directory of your current folder, navigate to it by: 
+```
+cd <path to LIDS>
+```
 
 ### Windows specific commands:
 If you are using a Windows operating system (OS), please install Ubuntu and run the following commands in Ubuntu terminal 
