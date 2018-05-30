@@ -15,7 +15,7 @@ To access our demo, clone our repository by running the **git clone**  <link to 
 RUN THE FOLLOWING IN THE TOP DIRECTORY OF LIDS REPOSITORY (use **cd** <path to LIDS>  command to navigate to LIDS directory).
 
 ### Windows specific commands:
-If you are using a Windows OS, please install Ubuntu and run the following commands in Ubuntu terminal 
+If you are using a Windows operating system (OS), please install Ubuntu and run the following commands in Ubuntu terminal 
 ```
 ./setup.sh
 ```
@@ -38,7 +38,7 @@ and navigate to the *tracking_demo notebook* in the *src/demo* folders and run i
 **Note, the path to imported files in the demo notebook are relative to our folder structure. Please, change the paths to match your folder structure.** 
 
 ### Mac specific commands:
-Run the following commands in terminal if you have a 64 bit OS. If you do not have a 64 bit OS or were unable to run the next three commands, skip to *creating an environment from scratch* and beyond:
+Run the following commands in terminal if you have a 64 bit Mac OS. If you do not have a 64 bit OS or were unable to run the next three commands, skip to *creating an environment from scratch* and beyond:
 
 ```
 conda env create -f environment.yml
